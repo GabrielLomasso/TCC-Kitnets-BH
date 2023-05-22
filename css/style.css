@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f5f5dc ;
+}
 
 .geral{
     width: 100%;
@@ -11,6 +14,7 @@
 }
 
 /* HEADER */
+
 
 header{
     height: 100px;
@@ -21,8 +25,8 @@ header{
     width: 80%;
     justify-content:space-between;    
     font-size: 18px;
+    border-radius: 0 0 15px 15px;
     background-color: black;
-    border-radius: 0 0 10px 10px;
 }
 
 
@@ -52,42 +56,46 @@ nav > .linksnav > ul > li > a:hover{
 /* MAIN */
 
 .principal{
+    padding-top: 20px;
     margin: auto;
     height: 100%;
     width: 80%;
-    padding-top: 50px;
+    border-radius: 15px;
 
+}
+
+
+.principal > .background_image{
+    margin: auto;
+    background-image: url(../imagens/kitnetsbhfundobom.png);
+    background-size: cover;
+    background-position: center;
+    width: 1050px;
+    height: 430px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #b1b19e ;
+    margin-bottom: 20px;
 }
 
 .principal > .sobrenos{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
 }
+
 
 .principal > .sobrenos > .sobrenos_text {
+    margin: 20px;
     width: 450px;
-}
-
-.principal >  .sobrenos > .sobrenos_image{
-    background-image: url(../imagens/140369629_1101038997028454_5189535967703181765_n.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 500px;
-    height: 350px;
-    border-radius: 15px;
-    transition: 0.5s;
 }
 
 
 .principal >  .sobrenos > .sobrenos_text > h1{
-    white-space: nowrap;
-    text-align: center;
-    width: 280px;
+    margin-left: 10px;
+    text-align: start;
     margin-bottom: 20px;
     font-size: 46px;
-    border-bottom: 1px solid white;
-
 }
 
 .principal >  .sobrenos > .sobrenos_text > p{
