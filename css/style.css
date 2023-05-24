@@ -3,9 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --begeclaro--:#dbd0c5;
+    --cinzaescuro--:#1f1d1b;
+    --begeescuro--:#885e43;
+    --bege--:#c39a7a;
+    --amareloouro--:#ffd700;
+}
 /* #c39a7a  #885e43 #1f1d1b #dbd0c5*/
 body{ 
-    background-color: #dbd0c5;  
+    background-color: var(--begeclaro--);  
 }
 
 .geral{
@@ -13,107 +21,87 @@ body{
     height: 100%;
 }
 
-/* HEADER */
 
-
-header{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 80%;
-    justify-content:space-between;    
-    border-radius: 0 0 15px 15px;
-    background-color: #c39a7a;
-}
-
-
-nav > .linksnav > ul{
-    display: flex;
-
-}
-nav > .linksnav > ul > li{
-    list-style: none;
-    text-align: center;
-}
-
-nav > .linksnav > ul > li + li{
-    border-left: 2px solid black;
-}
-
-nav > .linksnav > ul > li > a{
-    text-decoration: none;
-    color: black;
-    padding: 15px 20px;
-}
-
-nav > .linksnav > ul > li > a:hover{
-    color: #ffd700;
-    transition: 0.5s;
-    text-shadow: 3px 3px 5px black;
-    border-bottom: 1px solid #ffd700;
-}
 /* MAIN */
 
 .principal{
-    padding-top: 20px;
     margin: auto;
     height: 100%;
     width: 80%;
     border-radius: 15px;
-
 }
 
+.principal > .texto_apresenta{
+    margin: 20px 0;
+}
 
-.principal > .background_image{
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 430px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px grey;
-  }
-
-  .principal > .background_image> img{
+.principal > .introducao_kitnets > .area_kitnets{
+    
     width: 100%;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-
-.principal > .background_image:hover > img{
-    -moz-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+    display: flex;
+    background-color: var(--begeescuro--);
+    border-radius: 15px;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 20px ;
+    flex-wrap: wrap;
 }
 
-.principal > .sobrenos{
+.principal >  .introducao_kitnets > .area_kitnets > .card_kitnet{
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.principal >  .introducao_kitnets > .area_kitnets > .card_kitnet > .texto_card{
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--begeclaro--);
+    border-radius: 0 0 10px 10px ;
+    color: var(--cinzaescuro--);
+
+}
+
+.principal > .area_empresa{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.principal > .area_empresa > .fundo_empresa{
     display: flex;
     color: white;
-    background-color: black;
+    background-color: var(--begeescuro--);
     border-radius: 15px;
 }
 
 
-.principal > .sobrenos > .sobrenos_text {
+.principal > .area_empresa > .fundo_empresa > .texto_empresa {
     margin: 20px;
-    width: 450px;
+    width: 475px;
 }
 
 
-.principal >  .sobrenos > .sobrenos_text > h1{
+.principal > .area_empresa >  .fundo_empresa > .texto_empresa > h1{
     margin-left: 10px;
     text-align: start;
     margin-bottom: 20px;
     font-size: 46px;
 }
 
-.principal >  .sobrenos > .sobrenos_text > p{
+.principal > .area_empresa >  .fundo_empresa > .texto_empresa > p{
     text-align: center;
     margin-bottom: 10px;
 
 }
+
+
+
+
+
 
 #whatsapp {
     position: fixed;
@@ -128,11 +116,4 @@ nav > .linksnav > ul > li > a:hover{
 
 #whatsapp:hover {
     bottom: 25px;
-}
-
-/* FOOTER */
-
-footer{
-    width: 100%;
-    height: 20%;
 }
