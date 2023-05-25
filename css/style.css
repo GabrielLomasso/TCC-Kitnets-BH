@@ -7,7 +7,7 @@
 :root{
     --begeclaro--:#dbd0c5;
     --cinzaescuro--:#1f1d1b;
-    --begeescuro--:#885e43;
+    --marrom--:#885e43;
     --bege--:#c39a7a;
     --amareloouro--:#ffd700;
 }
@@ -39,7 +39,7 @@ body{
     
     width: 100%;
     display: flex;
-    background-color: var(--begeescuro--);
+    background-color: var(--marrom--);
     border-radius: 15px;
     align-items: center;
     justify-content:space-around;
@@ -74,7 +74,7 @@ body{
 .principal > .area_empresa > .fundo_empresa{
     display: flex;
     color: white;
-    background-color: var(--begeescuro--);
+    background-color: var(--marrom--);
     border-radius: 15px;
 }
 
