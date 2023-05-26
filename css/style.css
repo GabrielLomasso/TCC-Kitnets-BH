@@ -11,9 +11,18 @@
     --bege--:#c39a7a;
     --amareloouro--:#ffd700;
 }
+
+@font-face {
+    font-family: 'Sportsquake';
+    src: url(../fontes/Sportsquake.otf);
+    font-family: 'ironman';
+    src: url(../fontes/IRON\ MAN\ OF\ WAR\ 002\ NCV.ttf);
+    font-family: 'SIMPLIFICA';
+    src: url(../fontes/SIMPLIFICA\ Typeface.ttf);
+}
 /* #c39a7a  #885e43 #1f1d1b #dbd0c5*/
 body{ 
-    background-color: var(--begeclaro--);  
+    background-color: white;  
 }
 
 .geral{
@@ -27,18 +36,66 @@ body{
 .principal{
     margin: auto;
     height: 100%;
-    width: 80%;
-    border-radius: 15px;
+    width: 100%;
 }
 
-.principal > .texto_apresenta{
+.fundo_apresenta_kitnets {
+    display: flex;
+    justify-content: center;
+    background-color: #cccc;
+}
+
+.fundo_apresenta_kitnets > .apresenta_kitnets {
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.apresenta_kitnets > .texto_apresenta{
+    color: var(--cinzaescuro--);
+    font-size: 19px;
+    font-family: 'SIMPLIFICA';
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px;
+    text-align: center;
+    width: 30%;
     margin: 20px 0;
 }
 
-.principal > .introducao_kitnets > .area_kitnets{
-    
-    width: 100%;
+.container_btn{
     display: flex;
+    align-items: end;
+}
+.container_btn > .btn_vermais{
+    height: 50px;
+    width: 180px;
+    background-color: #5E17EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 1s;
+}
+
+.btn_vermais:hover{
+    background-color: #3b0d96;
+
+}
+
+.apresenta_kitnets > .img_apresenta_kitnets{
+    width: 60%;
+}
+
+.apresenta_kitnets > .img_apresenta_kitnets > img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.introducao_kitnets > .area_kitnets{
+    width: 80%;
+    display: none;
     background-color: var(--marrom--);
     border-radius: 15px;
     align-items: center;
@@ -47,13 +104,13 @@ body{
     flex-wrap: wrap;
 }
 
-.principal >  .introducao_kitnets > .area_kitnets > .card_kitnet{
+.area_kitnets > .card_kitnet{
     height: 100%;
     margin: 20px;
     border-radius: 10px;
 }
 
-.principal >  .introducao_kitnets > .area_kitnets > .card_kitnet > .texto_card{
+.card_kitnet > .texto_card{
     width: 100%;
     height: fit-content;
     margin-top: 10px;
@@ -64,14 +121,14 @@ body{
 
 }
 
-.principal > .area_empresa{
+.area_empresa{
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
 
-.principal > .area_empresa > .fundo_empresa{
+.area_empresa > .fundo_empresa{
     display: flex;
     color: white;
     background-color: var(--marrom--);
@@ -79,20 +136,20 @@ body{
 }
 
 
-.principal > .area_empresa > .fundo_empresa > .texto_empresa {
+.area_empresa > .fundo_empresa > .texto_empresa {
     margin: 20px;
     width: 475px;
 }
 
 
-.principal > .area_empresa >  .fundo_empresa > .texto_empresa > h1{
+.area_empresa >  .fundo_empresa > .texto_empresa > h1{
     margin-left: 10px;
     text-align: start;
     margin-bottom: 20px;
     font-size: 46px;
 }
 
-.principal > .area_empresa >  .fundo_empresa > .texto_empresa > p{
+.area_empresa >  .fundo_empresa > .texto_empresa > p{
     text-align: center;
     margin-bottom: 10px;
 
