@@ -1,8 +1,9 @@
 /* header */
 
 .fundo_header{
-    background-color: white;
     border-bottom: 3px solid var(--violeta--);
+
+
 }
 
 header{

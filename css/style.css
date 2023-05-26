@@ -5,20 +5,14 @@
 }
 
 :root{
-    --begeclaro--:#dbd0c5;
     --cinzaescuro--:#1f1d1b;
-    --marrom--:#885e43;
-    --bege--:#c39a7a;
-    --amareloouro--:#ffd700;
     --violeta--:#5E17EB;
     --roxoescuro--:#3b0d96;
+    --roxoclaro--:#8F5FEE;
+    --roxo--:#A100B8;
 }
 
 @font-face {
-    font-family: 'Sportsquake';
-    src: url(../fontes/Sportsquake.otf);
-    font-family: 'ironman';
-    src: url(../fontes/IRON\ MAN\ OF\ WAR\ 002\ NCV.ttf);
     font-family: 'SIMPLIFICA';
     src: url(../fontes/SIMPLIFICA\ Typeface.ttf);
 }
@@ -30,6 +24,7 @@ body{
 .geral{
     width: 100%;
     height: 100%;
+    z-index: 2;
 }
 
 
@@ -43,8 +38,10 @@ body{
 
 .fundo_apresenta_kitnets {
     display: flex;
+    background-color: #ccc;
+
     justify-content: center;
-    background-color: #cccc;
+
 }
 
 .fundo_apresenta_kitnets > .apresenta_kitnets {
@@ -53,13 +50,13 @@ body{
     justify-content:space-around;
 }
 
+
 .apresenta_kitnets > .texto_apresenta{
     color: var(--cinzaescuro--);
     font-size: 19px;
     font-family: 'SIMPLIFICA';
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 100px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 30%;
     margin: 20px 0;
@@ -70,8 +67,8 @@ body{
     align-items: end;
 }
 .container_btn > .btn_vermais{
-    height: 50px;
-    width: 180px;
+    margin-top: 50px;
+    padding: 15px 40px;
     background-color: var(--violeta--);
     color: white;
     border: none;
@@ -94,72 +91,6 @@ body{
     height: 100%;
 
 }
-
-.introducao_kitnets > .area_kitnets{
-    width: 80%;
-    display: flex;
-    background-color: var(--marrom--);
-    border-radius: 15px;
-    align-items: center;
-    justify-content:space-around;
-    margin-bottom: 20px ;
-    flex-wrap: wrap;
-}
-
-.area_kitnets > .card_kitnet{
-    height: 100%;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.card_kitnet > .texto_card{
-    width: 100%;
-    height: fit-content;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: var(--begeclaro--);
-    border-radius: 0 0 10px 10px ;
-    color: var(--cinzaescuro--);
-
-}
-
-.area_empresa{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-
-.area_empresa > .fundo_empresa{
-    display: flex;
-    color: white;
-    background-color: var(--marrom--);
-    border-radius: 15px;
-}
-
-
-.area_empresa > .fundo_empresa > .texto_empresa {
-    margin: 20px;
-    width: 475px;
-}
-
-
-.area_empresa >  .fundo_empresa > .texto_empresa > h1{
-    margin-left: 10px;
-    text-align: start;
-    margin-bottom: 20px;
-    font-size: 46px;
-}
-
-.area_empresa >  .fundo_empresa > .texto_empresa > p{
-    text-align: center;
-    margin-bottom: 10px;
-
-}
-
-
-
-
 
 
 #whatsapp {
