@@ -2,7 +2,7 @@
 
 .fundo_header{
     background-color: white;
-    border-bottom: 3px solid #5E17EB;
+    border-bottom: 3px solid var(--violeta--);
 }
 
 header{
@@ -35,13 +35,11 @@ nav > .linksnav > ul > li > a{
     text-decoration: none;
     color: var(--cinzaescuro--);
     padding: 15px 20px;
-    border-bottom: none;
 }
 
 nav > .linksnav > ul > li > a:hover{
-    color: var(--amareloouro--);
-    transition: 0.5s;
-    border-bottom: 1px solid var(--amareloouro--);
+    color: var(--violeta--);
+    border-bottom: 2px solid var(--violeta--);
 }
 
 /* footer */
