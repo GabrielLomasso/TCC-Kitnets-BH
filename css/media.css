@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+
+    header{
+        width: 100%;
+    }
+
+    nav > .linksnav > ul{
+        flex-direction:column ;
+    }
+
+    .fundo_apresenta_kitnets > .apresenta_kitnets{
+        width: 100%;
+    }
+
+    .apresenta_kitnets > .img_apresenta_kitnets{
+        display: none;
+    }    
+
+    .apresenta_kitnets > .texto_apresenta{
+        width: 80%;
+    }
+}

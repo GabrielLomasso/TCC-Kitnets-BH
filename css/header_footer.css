@@ -7,15 +7,13 @@
 }
 
 header{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: auto;
     width: 80%;
     justify-content:space-between;    
-
 }
 
 

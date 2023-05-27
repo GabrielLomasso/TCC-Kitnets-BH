@@ -19,12 +19,13 @@
 /* #c39a7a  #885e43 #1f1d1b #dbd0c5*/
 body{ 
     background-color: white;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .geral{
     width: 100%;
     height: 100%;
-    z-index: 2;
 }
 
 
@@ -38,8 +39,7 @@ body{
 
 .fundo_apresenta_kitnets {
     display: flex;
-    background-color: #ccc;
-
+    background-color: #ebebeb;
     justify-content: center;
 
 }
@@ -60,14 +60,15 @@ body{
     text-align: center;
     width: 30%;
     margin: 20px 0;
+    
 }
 
 .container_btn{
     display: flex;
-    align-items: end;
+    
 }
 .container_btn > .btn_vermais{
-    margin-top: 50px;
+    margin-top: 75px;
     padding: 15px 40px;
     background-color: var(--violeta--);
     color: white;
@@ -97,7 +98,6 @@ body{
     position: fixed;
     bottom: 20px;
     right: 20px;
-
     border-radius: 50px;
     text-align: center;
     z-index: 100;
@@ -106,4 +106,30 @@ body{
 
 #whatsapp:hover {
     bottom: 25px;
+}
+
+
+.fundo_footer{
+    bottom: 0;
+    height: 80px;
+    background-color: var(--violeta--);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.txt_footer{
+    color: white;
+    
+}
+
+.icones{
+    margin-top: 10px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
 }
