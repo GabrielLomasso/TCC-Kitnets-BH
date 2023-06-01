@@ -11,7 +11,16 @@
     --roxoclaro--:#8F5FEE;
     --roxo--:#A100B8;
 }
-
+/*---------barra de rolagem--------------*/
+::-webkit-scrollbar {
+        background-color: var(--violeta--);
+        width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    border-radius: 10px;
+}
+/*---------------------------------------*/
 @font-face {
     font-family: 'SIMPLIFICA';
     src: url(../fontes/SIMPLIFICA\ Typeface.ttf);
@@ -39,7 +48,7 @@ body{
 
 .fundo_apresenta_kitnets {
     display: flex;
-    background-color: #ebebeb;
+    background-color: #e2dfdf;
     justify-content: center;
 
 }
@@ -53,8 +62,8 @@ body{
 
 .apresenta_kitnets > .texto_apresenta{
     color: var(--cinzaescuro--);
-    font-size: 19px;
-    font-family: 'SIMPLIFICA';
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -63,12 +72,18 @@ body{
     
 }
 
+.text2{
+    background: -webkit-linear-gradient(#5E17EB,#8F5FEE,#A100B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .container_btn{
     display: flex;
     
 }
 .container_btn > .btn_vermais{
-    margin-top: 75px;
+    margin-top: 50px;
     padding: 15px 40px;
     background-color: var(--violeta--);
     color: white;
@@ -76,6 +91,7 @@ body{
     cursor: pointer;
     font-size: 18px;
     transition: 1s;
+
 }
 
 .btn_vermais:hover{
@@ -84,13 +100,35 @@ body{
 }
 
 .apresenta_kitnets > .img_apresenta_kitnets{
-    width: 60%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: bg-Slide 20s linear infinite;
+    background-repeat:no-repeat ;
+    background-size: 100% auto;
+}
+
+@keyframes bg-Slide{
+    0%{
+        background-image: url("../imagens/kitnetsbhfundo.png");
+    }
+    30%{
+        background-image: url("../imagens/Design\ sem\ nome\ \(4\).png");
+    }
+    60%{
+        background-image: url("../imagens/kitnetsbhfundo.png");
+        }
+    90%{
+        background-image: url("../imagens/Design\ sem\ nome\ \(4\).png");
+    }
+    100%{
+        background-image: url("../imagens/kitnetsbhfundo.png");
+    }
 }
 
 .apresenta_kitnets > .img_apresenta_kitnets > img{
     width: 100%;
     height: 100%;
-
 }
 
 
@@ -107,29 +145,5 @@ body{
 #whatsapp:hover {
     bottom: 25px;
 }
+/*-----------------------------END-HEADER/MAIN----------------------------*/
 
-
-.fundo_footer{
-    bottom: 0;
-    height: 80px;
-    background-color: var(--violeta--);
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 0;
-}
-
-.txt_footer{
-    color: white;
-    
-}
-
-.icones{
-    margin-top: 10px;
-    display: flex;
-    width: 150px;
-    justify-content: space-around;
-}
