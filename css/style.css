@@ -18,14 +18,13 @@
 }
 ::-webkit-scrollbar-thumb {
     background-color: #AAA;
-    border-radius: 10px;
 }
 /*---------------------------------------*/
 @font-face {
     font-family: 'SIMPLIFICA';
     src: url(../fontes/SIMPLIFICA\ Typeface.ttf);
 }
-/* #c39a7a  #885e43 #1f1d1b #dbd0c5*/
+
 body{ 
     background-color: white;  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -47,43 +46,55 @@ body{
 }
 
 .fundo_apresenta_kitnets {
+    width: 100%;
+    height: 500px;
     display: flex;
-    background-color: #e2dfdf;
+    background-image: url(../imagens/Captura\ de\ tela\ 2023-06-06\ 091918.png);
+    background-repeat:no-repeat ;
+    background-size:cover;
+    background-position: center;
     justify-content: center;
+    position: relative;
+}
 
+.overlay_fundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 .fundo_apresenta_kitnets > .apresenta_kitnets {
     width: 80%;
     display: flex;
-    justify-content:space-around;
+    justify-content:end;
+    align-items: center;
+    z-index: 1;
 }
 
 
 .apresenta_kitnets > .texto_apresenta{
     color: var(--cinzaescuro--);
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    gap: 80px;
     width: 30%;
-    margin: 20px 0;
-    
 }
 
-.text2{
-    background: -webkit-linear-gradient(#5E17EB,#8F5FEE,#A100B8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.text1{
+    color: white;
 }
 
-.container_btn{
-    display: flex;
-    
-}
 .container_btn > .btn_vermais{
-    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 15px 40px;
     background-color: var(--violeta--);
     color: white;
@@ -91,7 +102,7 @@ body{
     cursor: pointer;
     font-size: 18px;
     transition: 1s;
-
+    white-space: nowrap;
 }
 
 .btn_vermais:hover{
@@ -103,28 +114,9 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    animation: bg-Slide 20s linear infinite;
-    background-repeat:no-repeat ;
-    background-size: 100% auto;
+
 }
 
-@keyframes bg-Slide{
-    0%{
-        background-image: url("../imagens/kitnetsbhfundo.png");
-    }
-    30%{
-        background-image: url("../imagens/Design\ sem\ nome\ \(4\).png");
-    }
-    60%{
-        background-image: url("../imagens/kitnetsbhfundo.png");
-        }
-    90%{
-        background-image: url("../imagens/Design\ sem\ nome\ \(4\).png");
-    }
-    100%{
-        background-image: url("../imagens/kitnetsbhfundo.png");
-    }
-}
 
 .apresenta_kitnets > .img_apresenta_kitnets > img{
     width: 100%;
