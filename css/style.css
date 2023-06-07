@@ -80,7 +80,16 @@ body{
 }
 
 
-.apresenta_kitnets > .texto_apresenta{
+.container_apresenta_kitnets{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.apresenta_kitnets > .container_apresenta_kitnets > .texto_apresenta{
     color: var(--cinzaescuro--);
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -90,6 +99,7 @@ body{
     justify-content: center;
     white-space: nowrap;
 }
+
 
 .text1{
     color: white;
@@ -107,7 +117,6 @@ body{
     font-size: 18px;
     transition: 1s;
     white-space: nowrap;
-    margin-right: 60px;
 }
 
 .btn_vermais:hover{
