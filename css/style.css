@@ -69,11 +69,14 @@ body{
 }
 
 .fundo_apresenta_kitnets > .apresenta_kitnets {
-    width: 80%;
+
     display: flex;
-    justify-content:end;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
+    width: 80%;
     z-index: 1;
+    flex-direction: column;
+    gap: 80px;
 }
 
 
@@ -85,13 +88,14 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    gap: 80px;
-    width: 30%;
+    white-space: nowrap;
 }
 
 .text1{
     color: white;
 }
+
+
 
 .container_btn > .btn_vermais{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -103,6 +107,7 @@ body{
     font-size: 18px;
     transition: 1s;
     white-space: nowrap;
+    margin-right: 60px;
 }
 
 .btn_vermais:hover{

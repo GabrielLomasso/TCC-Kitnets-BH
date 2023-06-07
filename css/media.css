@@ -1,0 +1,27 @@
+
+@media(max-width: 1000px){
+    .apresenta_kitnets > .texto_apresenta{
+        font-size: 12px;
+    }
+    
+    .container_btn > .btn_vermais{
+        padding: 7.5px 20px;
+        margin-right: 50px;
+
+    }
+}
+@media(max-width: 640px){
+    
+    .fundo_apresenta_kitnets > .apresenta_kitnets{
+        gap: 40px;
+    }
+
+    .apresenta_kitnets > .texto_apresenta{
+        font-size: 10px;
+    }
+
+    .container_btn > .btn_vermais{
+        padding: 7.5px 20px;
+        margin-right: 30px;
+    }
+}
