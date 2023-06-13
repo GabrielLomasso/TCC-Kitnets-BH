@@ -120,12 +120,10 @@ body{
 
 
 .parte_kitnets_aberto{
-    background-color: #ececec;
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 
 }
 
