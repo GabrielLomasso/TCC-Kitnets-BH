@@ -1,7 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'SIMPLIFICA';
+    src: url(../fontes/SIMPLIFICA\ Typeface.ttf);
 }
 
 :root{
@@ -11,19 +10,11 @@
     --roxoclaro--:#8F5FEE;
     --roxo--:#A100B8;
 }
-/*---------barra de rolagem--------------*/
-::-webkit-scrollbar {
-        background-color: var(--violeta--);
-        width: 10px;
 
-}
-::-webkit-scrollbar-thumb {
-    background-color: #AAA;
-}
-/*---------------------------------------*/
-@font-face {
-    font-family: 'SIMPLIFICA';
-    src: url(../fontes/SIMPLIFICA\ Typeface.ttf);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{ 
@@ -36,15 +27,24 @@ body{
     width: 100%;
     height: 100%;
 }
+/*---------barra de rolagem--------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #5E17EB;
+}
+/*---------------------------------------*/
 
 
 /* MAIN */
-
 .principal{
     margin: auto;
     height: 100%;
     width: 100%;
 }
+
+/* Inicio */
 
 .fundo_apresenta_kitnets {
     width: 100%;
@@ -103,6 +103,7 @@ body{
     cursor: pointer;
     font-size: 18px;
     white-space: nowrap;
+    transition: 1s;
 }
 
 .btn_vermais:hover{
@@ -123,44 +124,88 @@ body{
 }
 
 
-
+/* Parte kitnets */
 .parte_kitnets_aberto{
-    background-color: #ccc;
     width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-
+    height: 400px;
+    background-color: white;
+    display: none;
 }
 
-.area_cards{
-    width: 80%;
-    border: 1px solid black;
-    padding: 20px 10px;
+.espaçamento{
+    margin: auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+.conteudo_slide{
+    width: 80%;
+    overflow: hidden;
 }
 
 .card_kitnet{
-    width: 300px;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
+}
+.card_kitnet:hover{
+    
+    box-shadow: 0 0 10 grey;
 }
 
-
-
-.card_kitnet > .card_imgs > img{
+.conteudo_card{
+    background-color: #8F5FEE;
+    width: 90%;
+    border-radius: 25px;
+}
+.card_image{
+    margin: auto;
     width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0 0;
 }
 
+.card_image img{
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card_txt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 15px;
+}
 
+.button_card{
+    width: 50%;
+    color: white;
+    background-color: #3b0d96;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
+.swiper-button-next, 
+.swiper-button-prev
+{
+    color: var(--violeta--);
+}
+.swiper-pagination-bullet{
+    background: var(--violeta--);
+}
+/* whatsapp */
 
 #whatsapp {
     position: fixed;
@@ -175,4 +220,3 @@ body{
 #whatsapp:hover {
     bottom: 25px;
 }
-/*-----------------------------END-HEADER/MAIN----------------------------*/
