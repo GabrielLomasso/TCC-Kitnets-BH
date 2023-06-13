@@ -14,37 +14,9 @@ button.addEventListener("click", abrir_fechar)
 
 function abrir_fechar(){
     if(parte_aberta.style.display == "none"){
-        parte_aberta.style.display = "block"
+        parte_aberta.style.display = "flex"
     }else{
         parte_aberta.style.display = "none"
     }
 }
 
-var swiper = new Swiper(".conteudo_slide", {
-    slidesPerView: 2,
-    centeredSlides: false,
-    slidesPerGroupSkip: 0,
-    fade:"true",
-    loop:"true",
-    keyboard: {
-      enabled: true,
-    },
-    breakpoints: {
-      769: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-    },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets:"true",
-    },
-  });
