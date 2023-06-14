@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.logonav{
+    cursor: pointer;
+}
 :root{
     --cinzaescuro--:#1f1d1b;
     --violeta--:#5E17EB;
+    --roxoescuro2--:#110a1f;
     --roxoescuro--:#3b0d96;
     --roxoclaro--:#8F5FEE;
     --roxo--:#A100B8;
@@ -120,10 +123,12 @@ body{
 
 
 .parte_kitnets_aberto{
+    background-color: #ececec;
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 
 }
 
