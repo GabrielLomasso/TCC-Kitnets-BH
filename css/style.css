@@ -376,13 +376,18 @@ body{
 }
 
 /* Missao visao valores */
+
+.fundo_mvv{
+    width: 100%;
+    background-color: var(--roxoescuro--);
+}
+
 .mis_vis_val{
     margin: auto;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .introd{
@@ -393,54 +398,82 @@ body{
     width: 100%;
     padding: 20px;
     margin: 20px;
+
 }
 
 .title_mvv{
-    
     margin-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
-}
-
-.subtitle_mvv{
-    display: flex;
-    margin: auto;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.area_card_mvv{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    color: #a77ff7;
+    text-shadow: 2px 2px 10px #5E17EB;
 }
 
 .card{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
     text-align: center;
-    width: 300px;
-    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px #8F5FEE;
+
+}
+
+.container_img_mis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.container_img_mis_direita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+}
+.container_img_mis img{
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.08);
+    width: 100%;
+    object-fit: cover;
+}
+
+.container_img_mis_direita img{
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.08);
+    width: 100%;
+    object-fit: cover;
+}
+.container_txt_mis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
 }
 
 .txt_card_mvv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    height: 90%;
-    border: 1px solid black;
-    text-decoration: none;
-    list-style: none;
-    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 35px;
 }
+
+.list_card_mvv{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 /* whatsapp */
 
