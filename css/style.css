@@ -226,21 +226,28 @@ body{
 /*---------------Sobre a empresa----------------*/
 
 .sobre_nos{
-    background-color: #CCC;
+    background-color: #f1f1f1;
+    padding: 10px 0;
 }
 
 .conteudo_sobrenos{
+    align-items: center;
+    justify-content: space-around;
     margin: auto;
     width: 90%;
     display: flex;
 }
 
 .txt_sobrenos{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    background-color:#a77ff7;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    padding: 40px 20px;
+    padding: 20px;
+    width: 40%;
+    height: 300px;
 }
 
 .txt_sobrenos h2{
@@ -257,19 +264,22 @@ body{
 /*----------carrosel sobrenos----------------*/
 
 .carousel {
-    height: fit-content;
-    width: 100%;
+    border-radius: 20px;
+    width: 60%;
     margin: 20px;
-  /*height:300px;/*ajustar altura do carrossel e a sombra*/
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 
 .carousel-inner {
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
     width: 100%;
-  /*height:300px;/*ajustar altura da caixa*/
+    height:300px; /*ajustar altura da caixa*/
+    display: flex;
+    align-items:center ;
+    justify-content: center;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -285,9 +295,10 @@ body{
 }
 
 .carousel-item img {
+    object-fit: cover;
     display: block;
-    /*height:auto;/*ajustar altura da imagem interna*/
-    max-width: 100%;
+
+    width: 100%;
 }
 
 .carousel-control {
@@ -321,7 +332,7 @@ body{
 }
 
 .carousel-control:hover {
-    background: rgba(225, 0, 0, 0.5);
+    background:  var(--roxoclaro--);
     color: white;
 }
 
@@ -349,21 +360,19 @@ body{
 }
 
 .carousel-bullet {
-    color: #178de5;
     cursor: pointer;
     display: block;
     font-size: 35px;
-  padding:0 10px;
-}
-
-.carousel-bullet:hover {
-    color: gray;
+    padding:0 10px;
+    color: var(--roxoescuro--);
+    opacity: .2;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: green;
+    color: var(--roxoescuro--);
+    opacity: 1;
 }
 
 /* Missao visao valores */
@@ -401,9 +410,7 @@ body{
     align-items: center;
     text-align: center;
 }
-.subtitle_mvv h3{
-    width: 300px;
-}
+
 .area_card_mvv{
     width: 100%;
     display: flex;
@@ -419,10 +426,20 @@ body{
     align-items: center;
     text-align: center;
     width: 300px;
-    height: 300px;
-    border: 1px solid black;
+    height: 350px;
 }
-.card p{
+
+.txt_card_mvv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 90%;
+    border: 1px solid black;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
 }
 
 /* whatsapp */

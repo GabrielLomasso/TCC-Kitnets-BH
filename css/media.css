@@ -1,6 +1,14 @@
-@media(max-width: 600px){
-
+@media(max-width: 800px){
+    .conteudo_sobrenos{
+        flex-wrap: wrap;
+    }
+    .txt_sobrenos{
+        width: 100%;
+    }
+    .carousel{
+        width: 100%;
+    }
 }
 @media(max-width: 950px){
-
+    
 }
