@@ -410,63 +410,61 @@ body{
 }
 
 .card{
-    height: 300px;
+    height: 200px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px #8F5FEE;
+    padding: 20px 0;
+    box-sizing: content-box;
 
 }
 
 .container_img_mis{
+    width: 250px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
     overflow: hidden;
+    border-radius:20px;
+}
+.container_img_mis img{
+    display: block;
+    width: 100%;
     object-fit: cover;
-    border-radius: 20px 0 0 20px;
 }
 
 .container_img_mis_direita{
+    width: 250px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: end;
     overflow: hidden;
-    object-fit: cover;
-    border-radius: 0 20px 20px 0;
-}
-.container_img_mis img{
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.08);
-    width: 100%;
-    object-fit: cover;
+    border-radius:20px;
 }
 
 .container_img_mis_direita img{
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.08);
+    display: block;
     width: 100%;
     object-fit: cover;
 }
 .container_txt_mis{
+    padding: 20px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    object-fit: cover;
+    width: 45%;
 }
 
 .txt_card_mvv{
-    width: 100%;
-    font-size: 18px;
-    line-height: 35px;
+    line-height: 20px;
+
 }
 
 .list_card_mvv{
-    height: 100%;
+    height: 70%;
     list-style: none;
     display: flex;
     justify-content: space-around;

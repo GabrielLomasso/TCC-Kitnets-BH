@@ -1,4 +1,6 @@
 @media(max-width: 800px){
+    
+    /*Sobre nos*/
     .conteudo_sobrenos{
         flex-wrap: wrap;
     }
@@ -10,7 +12,38 @@
         width: 100%;
     }
 
+    /*Missao visao valores*/
+    .card{
+        padding: 0;
+        height: fit-content;
+    }
+    .container_img_mis{
+        justify-content: center;
+    }
+    .container_img_mis_direita{
+        justify-content: center;
+    }
+    .container_txt_mis{
+        width: 100%;
+        font-size: 12px;
+    }
+    .txt_card_mvv{
+        line-height: normal;
+    }
 }
-@media(max-width: 950px){
+@media(max-width: 500px){
+        /*inicio*/
+        .fundo_apresenta_kitnets > .apresenta_kitnets{
+            width: 100%;
+            justify-content: center;
+        }
+        .box_txt_apresenta{
+            font-size: 13px;
+        }
+
+        /*Missao visao valores*/
+        .container_txt_mis{
+            font-size: 9.5px;
+        }
     
-}
+    }
