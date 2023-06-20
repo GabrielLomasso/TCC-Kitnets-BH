@@ -382,6 +382,7 @@ body{
     background-color: var(--roxoescuro--);
 }
 
+
 .mis_vis_val{
     margin: auto;
     width: 90%;
@@ -481,7 +482,7 @@ body{
     right: 20px;
     border-radius: 50px;
     text-align: center;
-    z-index: 100;
+    z-index: 10;
     transition: bottom 0.3s;
 }
 

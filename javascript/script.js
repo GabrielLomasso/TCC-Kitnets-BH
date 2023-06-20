@@ -86,3 +86,16 @@ function escuro(){
         escuros6.style.backgroundColor = '#5E17EB'
     }
 }
+
+//Formulario
+
+function AbrirModal(){
+  document.querySelector(".modal_form").classList.add("active");
+  document.querySelector(".fade_modal").style.display="block";
+};
+
+function FecharModal(){
+  document.querySelector(".modal_form").classList.remove("active");
+  document.querySelector(".fade_modal").style.display="none";
+
+};
