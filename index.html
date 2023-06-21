@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@9.3.2_swiper-bundle.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- SWIPPER Javascript -->
     <script src="javascript/cdn.jsdelivr.net_npm_swiper@9.3.2_swiper-bundle.min.js" defer></script>
     <!-- Javascript -->
@@ -59,7 +59,7 @@
                                                 <div class="card_txt">
                                                     <h1>Kitnet 1</h1>
                                                     <p>metragem</p>
-                                                    <button class="button_card">Ver mais...</button>
+                                                    <button class="button_card" onclick="AbrirModalKitnet()">Ver mais...</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,6 +134,20 @@
                         </div>
                     </div>
 
+                    <div class="fundo_localizacao">
+
+                        <div class="conteudo_localizacao">
+
+                            <div class="txt_localizacao">
+                                <h1>Onde estamos Localizados?</h1>
+                                <h3>Nossas kitnets estão alocadas na rua Paulo Brandão, 187 no bairro Santa Efigênia</h3>
+                            </div>
+
+                            <div class="maps_localizacao">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.92900621444!2d-43.91758328255615!3d-19.927396299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69990038789d3%3A0xd1152b019b6d7183!2sR.%20Paulo%20Brand%C3%A3o%2C%20187%20-%20Santa%20Efig%C3%AAnia%2C%20Belo%20Horizonte%20-%20MG%2C%2030240-420!5e0!3m2!1spt-BR!2sbr!4v1687370575613!5m2!1spt-BR!2sbr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
                     <div class="sobre_nos">
 
                         <div class="conteudo_sobrenos">
@@ -255,11 +269,12 @@
                     <a onclick="AbrirModal()" class="icon icon--email" id="btnModalForm">
                         <i class="ri-instagram-line"><img src="icones/mail.svg" alt=""></i>
                     </a>
-                    <a href="https://wa.me/553198881133" target="_blank" class="icon icon--telefone">
+                    <a href="tel:+5531983463477" target="_blank" class="icon icon--telefone">
                         <i class="ri-instagram-line"><img src="icones/phone.svg" alt=""></i>
                     </a>
                 </div>
             </section>
+            <!-- 553198881133 -->
         </footer>
 
         <div class="fundo_modal_form">
@@ -272,20 +287,36 @@
                 <div class="form_txt">
                     <h2>Deixe seu contato</h2>
                     <p>Vamos contata-lo assim que possível</p>
-                    <div class="formulario">
+                    <form action="https://api.staticforms.xyz/submit" method="post" class="formulario">
                         <div class="inputForm">
-                            <label for="email">Seu nome:</label>
-                            <input type="email" id="email" placeholder="Seu nome...">
-                            <label for="email">Seu telefone:</label>
-                            <input type="email" id="email" placeholder="(xx)xxxx-xxxx">
+                            <label for="name">Seu nome:</label>
+                            <input type="text" name="name" id="name" placeholder="Seu nome..." required>
+                            <label for="tel">Seu telefone:</label>
+                            <input type="text" name="phone" id="tel" placeholder="(xx)xxxx-xxxx" required>
                             <label for="email">Seu email:</label>
-                            <input type="email" id="email" placeholder="seuemail@gmail.com">
+                            <input type="text" name="email" id="email" placeholder="seuemail@gmail.com" required>
                         </div>
                         <div class="btn_subscribe">
-                            <button>Enviar</button>
+                            <button type="submit">Enviar</button>
                         </div>
-                    </div>
+                        <input type="hidden" name="accessKey" value="6347c7d7-bc22-4c19-8229-51947244c1dd">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/html/obrigado.html">
+                    </form>
+
                     <button id="closeModalForm" onclick="FecharModal()">&times</button>
+                </div>
+            </div>
+        </div>
+        <div class="fundo_modal_kitnets">
+            <div class="fade_modal"></div>
+            <div class="modal_kitnet">
+                <div class="modal_carrossel">
+                    <img src="imagens/img_kitnet2.jpg" alt="">
+                </div>
+                
+                <div class="modal_txt">
+                    <h2>ballbal</h2>
+                    <button id="closeModalForm" onclick="FecharModalKitnet()">&times</button>
                 </div>
             </div>
         </div>
