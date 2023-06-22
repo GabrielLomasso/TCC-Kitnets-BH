@@ -77,9 +77,6 @@ footer{
     background-color: #fd5949;
     outline-color: #fd5949;
 }
-.icon--telefone{
-    display: none;
-}
 .icon--telefone:hover{
     background-color: green;
     outline-color: green;
@@ -90,4 +87,9 @@ footer{
     20%{transform: rotate(-15deg);}
     30%{transform: rotate(15deg);}
     40%{transform: rotate(-15deg);}
+}
+
+.active{
+    background-color : #1a1a1a;
+    color: white;
 }

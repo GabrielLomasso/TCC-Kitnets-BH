@@ -4,7 +4,7 @@
 }
 
 :root{
-    --cinzaescuro--:#1f1d1b;
+    --cinzaescuro--:rgb(31, 29, 27);
     --violeta--:#5E17EB;
     --roxoescuro--:#3b0d96;
     --roxoclaro--:#8F5FEE;
@@ -93,7 +93,7 @@ body{
     color: white;
     white-space: nowrap;
 
-} 
+}
 
 .container_btn > .btn_vermais{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -267,7 +267,7 @@ body{
 /*---------------Sobre a empresa----------------*/
 
 .sobre_nos{
-    background-color: #FFF;
+    background-color: #f1f1f1;
     padding: 10px 0;
 }
 
@@ -293,13 +293,13 @@ body{
 
 .txt_sobrenos h2{
     margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
 }
 
 .txt_sobrenos P{
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-family: 'roboto';
+    font-size: 30px;
 }
 
 /*----------carrosel sobrenos----------------*/
@@ -433,7 +433,6 @@ body{
 }
 
 .introd{
-    gap: 25px;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -499,6 +498,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 45%;
+    
 }
 
 .txt_card_mvv{
@@ -507,7 +507,6 @@ body{
 }
 
 .list_card_mvv{
-    gap: 8px;
     height: 70%;
     list-style: none;
     display: flex;
@@ -531,4 +530,50 @@ body{
 
 #whatsapp:hover {
     bottom: 25px;
+}
+/*modo escuro*/
+.container
+{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100px;
+    height: 100px;
+    transition: background .5s;
+}
+
+.btn
+{
+    width: 80px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    left: 2rem;
+}
+
+.btn_active{
+    background-color : #1a1a1a;
+    color: white;
+}
+
+.btn:before
+{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #000000ef;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left .5s;
+}
+
+.btn.active:before
+{
+    left: 43px;
+    transform: translateY(-50%);
 }

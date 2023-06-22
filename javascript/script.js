@@ -99,32 +99,3 @@ function FecharModal(){
   document.querySelector(".fade_modal").style.display="none";
 
 };
-
-//Modal kitnets
-
-
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-
-function AbrirModalKitnet(){
-  document.querySelector(".modal_kitnet").classList.add("active");
-  document.querySelector(".fade_modal").style.display="block";
-};
-
-function FecharModalKitnet(){
-  document.querySelector(".modal_kitnet").classList.remove("active");
-  document.querySelector(".fade_modal").style.display="none";
-
-};
