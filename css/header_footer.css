@@ -93,8 +93,3 @@ footer{
     30%{transform: rotate(15deg);}
     40%{transform: rotate(-15deg);}
 }
-
-.active{
-    background-color : #1a1a1a;
-    color: white;
-}

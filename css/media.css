@@ -75,3 +75,9 @@
     .kitnet6_active{
         color: #1a1a1a;
     }
+
+    .localizacao_active{
+        background-color: #222222;
+        /* background-color: #292929; */
+        color: #f6f6f6;
+    }

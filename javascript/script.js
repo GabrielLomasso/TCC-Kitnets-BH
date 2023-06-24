@@ -65,29 +65,80 @@ var swiper = new Swiper(".conteudo_slide", {
   });
 
   
-    //Formulario
+    //Modal Formulario
     
     function AbrirModal(){
       document.querySelector(".modal_form").classList.add("activate");
-      document.querySelector(".fade_modal").style.display="block";
+      document.querySelector(".fade_modal_form").style.display="block";
     };
 
     function FecharModal(){
       document.querySelector(".modal_form").classList.remove("activate");
-  document.querySelector(".fade_modal").style.display="none";
+  document.querySelector(".fade_modal_form").style.display="none";
   
 };
 
-
-
-function AbrirModalKitnet(){
-  document.querySelector(".modal_kitnet").classList.add("activate");
-  document.querySelector(".fade_modal").style.display="block";
+ //Modal kitnet
+//Kitnet1
+function AbrirModalKitnet1(){
+  document.querySelector(".kitnet1").classList.add("activate");
+  document.querySelector(".fade_kitnet1").style.display="block";
 };
 
-function FecharModalKitnet(){
-  document.querySelector(".modal_kitnet").classList.remove("activate");
-  document.querySelector(".fade_modal").style.display="none";
+//fechar modal kitnet
+function FecharModalKitnet1(){
+  document.querySelector(".kitnet1").classList.remove("activate");
+  document.querySelector(".fade_kitnet1").style.display="none";
+  
+};
+
+//Kitnet2
+function AbrirModalKitnet2(){
+  document.querySelector(".kitnet2").classList.add("activate");
+  document.querySelector(".fade_kitnet2").style.display="block";
+};
+
+//fechar modal kitnet
+function FecharModalKitnet2(){
+  document.querySelector(".kitnet2").classList.remove("activate");
+  document.querySelector(".fade_kitnet2").style.display="none";
+  
+};
+//Kitnet3
+function AbrirModalKitnet3(){
+  document.querySelector(".kitnet3").classList.add("activate");
+  document.querySelector(".fade_kitnet3").style.display="block";
+};
+
+//fechar modal kitnet
+function FecharModalKitnet3(){
+  document.querySelector(".kitnet3").classList.remove("activate");
+  document.querySelector(".fade_kitnet3").style.display="none";
+  
+};
+
+//Kitnet4
+function AbrirModalKitnet4(){
+  document.querySelector(".kitnet4").classList.add("activate");
+  document.querySelector(".fade_kitnet4").style.display="block";
+};
+
+//fechar modal kitnet
+function FecharModalKitnet4(){
+  document.querySelector(".kitnet4").classList.remove("activate");
+  document.querySelector(".fade_kitnet4").style.display="none";
+  
+};
+//Kitnet5
+function AbrirModalKitnet5(){
+  document.querySelector(".kitnet5").classList.add("activate");
+  document.querySelector(".fade_kitnet5").style.display="block";
+};
+
+//fechar modal kitnet
+function FecharModalKitnet5(){
+  document.querySelector(".kitnet5").classList.remove("activate");
+  document.querySelector(".fade_kitnet5").style.display="none";
   
 };
 
