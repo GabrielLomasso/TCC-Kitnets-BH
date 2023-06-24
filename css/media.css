@@ -35,6 +35,7 @@
         justify-content: center;
     }
     .container_txt_mis{
+        border-radius:20px;
         width: 100%;
         font-size: 12px;
     }
@@ -60,7 +61,13 @@
 
         /*Missao visao valores*/
         .container_txt_mis{
+            border-radius:20px;
             font-size: 9.5px;
         }
     
+    }
+
+    .active{
+        background-color : #1a1a1a;
+        color: #f6f6f6;
     }

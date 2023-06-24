@@ -35,7 +35,7 @@
     transform 300ms ease-in-out 0ms,
     opacity 300ms ease-in-out 0ms;
 }
-.modal_form.active{
+.modal_form.activate{
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
@@ -47,7 +47,10 @@
     display: flex ;
     align-items: center;
 }
+.form_image img{
+    border-radius: 15px;
 
+}
 .form_txt h2{
     font-size: 28px;
     font-family: "Montserrat", sans-serif;
@@ -127,7 +130,7 @@
     width: calc(100% - 20px);
     max-width: 1200px;
     height: calc(100% - 20px);
-    max-height: 500px;
+    max-height: 600px;
     background-color: #FFF;
     z-index: 12;
     padding: 50px 40px 40px;
@@ -140,7 +143,7 @@
     opacity 300ms ease-in-out 0ms;
 }
 
-.modal_kitnet.active{
+.modal_kitnet.activate{
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
@@ -150,14 +153,38 @@
 }
 
 .modal_carrossel{
-    display: flex ;
+    border: 4px solid var(--roxoclaro--);
+    border-radius: 20px;
+    margin: 0;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.modal_carrossel img{
+.carrossel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.carrossel div{
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
+.carrossel div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal_txt{
+    overflow: scroll;
+}
 @media (min-width:680px){
     .modal_kitnet{
         grid-template-columns: repeat(2, 1fr);
@@ -175,4 +202,9 @@
     background:transparent;
     color: #555;
     border: none;
+}
+
+.active{
+    background-color : #1a1a1a;
+    color: white;
 }
