@@ -78,9 +78,6 @@ footer{
     background-color: #fd5949;
     outline-color: #fd5949;
 }
-.icon--telefone{
-    display: none;
-}
 .icon--telefone:hover{
     background-color: green;
     outline-color: green;
