@@ -229,6 +229,7 @@
 }
 
 .slick-prev, .slick-next{
+    display: none;
     position: static;
 }
 .slick-prev:before, .slick-next:before{
@@ -301,6 +302,9 @@
 
     }
     .slick-arrow{
+        display: block;
+    }
+    .slick-prev, .slick-next{
         display: block;
     }
 }
