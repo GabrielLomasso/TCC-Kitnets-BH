@@ -1,6 +1,9 @@
 //Modal carrossel
 $(document).ready(function(){
-  $('.carrossel').slick();
+  $('.carrossel').slick({
+    infinite:true,
+  });
+
 });    
 //Whatsapp
 

@@ -224,8 +224,11 @@
     object-fit: cover;
 }
 
-.slick-prev, .slick-next{
+.slick-arrow{
     display: none;
+}
+
+.slick-prev, .slick-next{
     position: static;
 }
 .slick-prev:before, .slick-next:before{
@@ -297,7 +300,7 @@
         grid-template-columns: repeat(2, 1fr);
 
     }
-    .slick-prev, .slick-next{
+    .slick-arrow{
         display: block;
     }
 }
