@@ -261,7 +261,7 @@
 }
 
 
-.modal_txt > h1, p, h2, .btn_modal_kitform{
+.modal_txt > h1, p, .btn_modal_kitform{
     margin-bottom: 10px;
 }
 
@@ -269,18 +269,19 @@
     border-bottom: 2px solid var(--roxoclaro--);
 }
 
-.modal_txt > h2{
-    border-bottom: 2px solid var(--roxoclaro--);
 
+.modal_txt > .regras{
+    border-bottom: 2px solid var(--roxoclaro--);
+    margin-bottom: 10px;
 }
 
 .modal_txt > p{
-    font-size: 18px
+    font-size: 18px;
 }
 
 .modal_txt > p > a{
     text-decoration: none;
-
+    
 }
 
 .modal_txt > .btn_modal_kitform{
