@@ -77,8 +77,27 @@ var swiper = new Swiper(".conteudo_slide", {
 
     function FecharModal(){
       document.querySelector(".modal_form").classList.remove("activate");
-      document.querySelector(".fade_modal_form").style.display="none";
-    };
+  document.querySelector(".fade_modal_form").style.display="none";
+  
+};
+//validação
+function validarEmail(){
+  var email = document.querySelector('#email');
+  var error = document.querySelector('#error-email');
+  
+  if(!email.checkValidity()){
+    error.innerHTML = "Email invalido";  
+  }
+   
+}
+
+function redefinirMsg(){
+  var error = document.querySelector('#error-email');
+  if (error.innerHTML == "Email invalido"){
+    error.innerHTML = "";
+  }
+}
+
 
     
     
