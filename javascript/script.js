@@ -99,7 +99,7 @@ function redefinirMsg(){
 }
 
 
-//Modal kitnet
+ //Modal kitnet
 //Kitnet1
 function AbrirModalKitnet1(){
   document.querySelector(".kitnet1").classList.add("activate");
@@ -162,3 +162,4 @@ function FecharModalKitnet5(){
   document.querySelector(".fade_kitnet5").style.display="none";
   
 };
+
