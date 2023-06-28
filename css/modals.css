@@ -222,6 +222,7 @@
 .carrossel div img{
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .slick-arrow{
@@ -253,13 +254,13 @@
     overflow: scroll;
 }
 
-.modal_txt::-webkit-scrollbar{
+.modal_txt::-webkit-scrollbar {
     width: 5px;
 }
 .modal_txt::-webkit-scrollbar-thumb {
     background-color: #CCC;
-
 }
+
 
 .modal_txt > h1, p, h2, .btn_modal_kitform{
     margin-bottom: 10px;
@@ -269,19 +270,18 @@
     border-bottom: 2px solid var(--roxoclaro--);
 }
 
-
 .modal_txt > h2{
     border-bottom: 2px solid var(--roxoclaro--);
-    margin-bottom: 10px;
+
 }
 
 .modal_txt > p{
-    font-size: 18px;
+    font-size: 18px
 }
 
 .modal_txt > p > a{
     text-decoration: none;
-    
+
 }
 
 .modal_txt > .btn_modal_kitform{
@@ -296,9 +296,6 @@
     color: #FFF;
     box-shadow: 0px 2px 2px #ddd;
 }
-
-
-
 
 
 
