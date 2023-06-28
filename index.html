@@ -290,6 +290,9 @@
                     <a onclick="AbrirModal()" class="icon icon--email" id="btnModalForm">
                         <i class="ri-instagram-line"><img src="icones/mail.svg" alt=""></i>
                     </a>
+                    <a href="tel:+5531998881133" target="_blank" class="icon icon--telefone">
+                        <i class="ri-instagram-line"><img src="icones/phone.svg" alt=""></i>
+                    </a>
                 </div>
             </section>
             
@@ -307,13 +310,12 @@
                     <p>Vamos contata-lo assim que possível</p>
                     <form action="https://api.staticforms.xyz/submit" method="post" class="formulario">
                         <div class="inputForm">
+                            
                             <label for="name">Nome:</label>
                             <input type="text" name="name" id="name" placeholder="Seu nome..." required>
+                           
                             <label for="tel">Telefone:</label>
                             <input type="text" name="phone" id="tel" placeholder="(xx)xxxx-xxxx" required>
-
-                            <!--<label for="email">Email:</label>
-                            <input type="text" name="email" id="email" placeholder="seuemail@gmail.com" required>-->
 
                             <label for="email" >Email:</label>
                             <input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email"/>

@@ -254,19 +254,14 @@
 }
 
 .modal_txt::-webkit-scrollbar{
-    width: 9px;
+    width: 5px;
 }
 .modal_txt::-webkit-scrollbar-thumb {
     background-color: #CCC;
-    border: 1px solid transparent;
-    border-radius: 20px;
+
 }
 
-.modal_txt::-webkit-scrollbar-thumb:hover{
-    background-color: #c2bfbf;
-}
-
-.modal_txt > h1, p, .btn_modal_kitform{
+.modal_txt > h1, p, h2, .btn_modal_kitform{
     margin-bottom: 10px;
 }
 
@@ -275,7 +270,7 @@
 }
 
 
-.modal_txt > .regras{
+.modal_txt > h2{
     border-bottom: 2px solid var(--roxoclaro--);
     margin-bottom: 10px;
 }

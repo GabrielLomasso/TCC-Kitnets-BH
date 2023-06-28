@@ -616,17 +616,3 @@ body{
     left: 30px;
     transform: translateY(-50%);
 }
-
-.regras{
-    display: flex;
-    column-gap: 5px;
-}
-
-.regras > h2{
-    margin: 0;
-    
-}
-
-.regras > img{
-    width: 19px;
-}

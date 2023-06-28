@@ -99,11 +99,6 @@ function redefinirMsg(){
 }
 
 
-    
-    
-
-    
-
 //Modal kitnet
 //Kitnet1
 function AbrirModalKitnet1(){
