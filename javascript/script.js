@@ -77,11 +77,15 @@ var swiper = new Swiper(".conteudo_slide", {
 
     function FecharModal(){
       document.querySelector(".modal_form").classList.remove("activate");
-  document.querySelector(".fade_modal_form").style.display="none";
-  
-};
+      document.querySelector(".fade_modal_form").style.display="none";
+    };
 
- //Modal kitnet
+    
+    
+
+    
+
+//Modal kitnet
 //Kitnet1
 function AbrirModalKitnet1(){
   document.querySelector(".kitnet1").classList.add("activate");
@@ -144,4 +148,3 @@ function FecharModalKitnet5(){
   document.querySelector(".fade_kitnet5").style.display="none";
   
 };
-
