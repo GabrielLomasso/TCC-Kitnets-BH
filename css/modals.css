@@ -253,13 +253,18 @@
     overflow: scroll;
 }
 
-.modal_txt::-webkit-scrollbar {
-    width: 5px;
+.modal_txt::-webkit-scrollbar{
+    width: 9px;
 }
 .modal_txt::-webkit-scrollbar-thumb {
     background-color: #CCC;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 
+.modal_txt::-webkit-scrollbar-thumb:hover{
+    background-color: #c2bfbf;
+}
 
 .modal_txt > h1, p, .btn_modal_kitform{
     margin-bottom: 10px;
@@ -296,6 +301,11 @@
     color: #FFF;
     box-shadow: 0px 2px 2px #ddd;
 }
+
+
+
+
+
 
 @media (min-width:680px){
     .modal_kitnet{
