@@ -1,3 +1,14 @@
+@media(min-width: 1400px){
+    /* avalia */
+    .geral_avalie{
+        height: 100%;
+    }
+
+    .conteudo_avalie{
+        top: -60px;
+    }
+}
+
 @media(max-width: 800px){
     
     /*Sobre nos*/
