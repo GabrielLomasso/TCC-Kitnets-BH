@@ -20,6 +20,7 @@ btn.onclick = function()
             textoescuro.classList.toggle('active')
             textoescuro2.classList.toggle('active')
             textoescuro3.classList.toggle('active')
+            avalia.classList.toggle('active')
             document.getElementById("logo").src = imgBranca
             let aux = imgBranca
             imgBranca = imgPreta
@@ -39,3 +40,4 @@ let textoescuro3 = document.getElementById("textoescuro3")
 let kitnet6 = document.getElementById("img_kitnet6")
 let imgPreta = "imagens/logo paisagem preta.png"
 let imgBranca = "imagens/logo paisagem branca.png"
+let avalia = document.getElementById("avalia_escuro")

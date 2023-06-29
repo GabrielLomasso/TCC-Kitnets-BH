@@ -260,6 +260,15 @@ body{
     margin: auto;
     width: 90%;
 }
+
+.title_localiza{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
 .txt_localizacao{
     display: flex;
     flex-direction: column;
@@ -536,6 +545,59 @@ body{
     flex-direction: column;
 }
 
+/* Avalie-nos */
+
+.avalie{
+    width: 100%;
+}
+
+.geral_avalie{
+    width: 100%;
+    height: 450px;
+}
+
+.conteudo_avalie{
+    position: relative;
+    top: -30px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.conteudo_avalie > a > button{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--roxoclaro--);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 20px 40px;
+}
+
+.conteudo_avalie > h3{
+    margin-bottom: 20px;
+}
+
+.conteudo_avalie > button> a{
+    padding: 20px 40px;
+    text-decoration: none;
+    color: black;
+}
+.title_avalie{
+    gap: 10px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.title_avalie > h1{
+    font-size: 36px;
+}
+
+
 
 /* whatsapp */
 
@@ -551,43 +613,4 @@ body{
 
 #whatsapp:hover {
     bottom: 25px;
-}
-/*modo escuro*/
-
-
-.btn
-{
-    width: 60px;
-    height: 30px;
-    border: 2px solid var(--roxoclaro--);
-    border-radius: 40px;
-    position: absolute;
-    cursor: pointer;
-    right: 1rem;
-
-}
-
-.btn_active{
-    background-color : #1a1a1a;
-    color: white;
-}
-
-.btn:before
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: var(--roxoclaro--);
-    border-radius: 50%;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    transition: left .5s;
-}
-
-.btn.active:before
-{
-    left: 30px;
-    transform: translateY(-50%);
 }

@@ -13,6 +13,46 @@ header{
 }
 
 
+/*modo escuro*/
+
+
+.btn
+{
+    width: 60px;
+    height: 30px;
+    border: 2px solid var(--roxoclaro--);
+    border-radius: 40px;
+    position: absolute;
+    cursor: pointer;
+    right: 1rem;
+
+}
+
+.btn_active{
+    background-color : #1a1a1a;
+    color: white;
+}
+
+.btn:before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--roxoclaro--);
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left .5s;
+}
+
+.btn.active:before
+{
+    left: 30px;
+    transform: translateY(-50%);
+}
+
 
 /*--------------------------FOOTER-----------------------*/
 
