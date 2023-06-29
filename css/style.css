@@ -262,6 +262,7 @@ body{
 }
 
 .title_localiza{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -277,7 +278,7 @@ body{
     width: 100%;
 }
 
-.txt_localizacao > h1, h3{
+.txt_localizacao > h3{
     margin-bottom: 15px;
 }
 
