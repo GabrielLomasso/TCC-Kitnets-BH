@@ -150,10 +150,7 @@
                         <div class="conteudo_localizacao">
 
                             <div class="txt_localizacao">
-                                <div class="img-22">
-                                    <h1>Onde estamos Localizados?</h1>
-                                    <img class="img22" src="imagens/unnamed.png" alt="" width="85px">
-                                </div>
+                                <h1>Onde estamos Localizados?</h1>
                                 <h3>Imóvel situado na Rua Paulo Brandão, rua familiar, sossegada, próximo a tudo e de fácil acesso. </h3>
                                 <p>Próximo aos Hospitais Arapiara, Unimed,Life Center, Santa Casa, Hospital das Clínicas… Próximo a Faculdade de Medicina da UFMG, ao Shopping Boulevard, Estação do metrô, primeiro batalhão da polícia militar, da Praça Floriano Peixoto, várias linhas de ônibus, a 10 minutos do Centro de BH.  </p>
                             </div>
@@ -205,11 +202,6 @@
                                     </ol>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="quem_somos">
-                            <h1>Quem somos?</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum blanditiis saepe qui porro animi, earum et sunt! Natus dolor atque rerum? Officiis perferendis itaque eveniet id voluptas quibusdam aut?</p>
                         </div>
                     </div>
 
@@ -318,7 +310,7 @@
                             <input type="text" name="phone" id="tel" placeholder="(xx)xxxx-xxxx" required>
 
                             <label for="email" >Email:</label>
-                            <input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email"/>
+                            <input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" placeholder="seuemail@gmail.com" required/>
                             <span id="error-email"></span>
 
                         </div>
@@ -357,20 +349,26 @@
                 </div>
                 
                 <div class="modal_txt">
-                    <h1>Kitnet 1</h1>
-                    <p>Kitnets com quarto conjugado com cozinha, banheiro e área de serviço. Todas com aproximadamente 25 metros quadrados.</p>
-                    <p>Direto com proprietário sem burocracia, locações individuais e para mulheres</p>
-                    <p>Valor do aluguel com preço justo e com tudo incluso água, iptu, luz, mobília, internet básica. </p>
+                    <div class="regras">
+                        <img src="icones/home1.svg" alt="">
+                        <h1>Kitnet 1</h1>
+                    </div>
+                    <p>Kitnets com quarto conjugado junto a cozinha, banheiro e área de serviço. Todas com aproximadamente 25m².</p>
+                    <p>Direto com proprietário e sem burocracia, locações individuais e para mulheres</p>
+                    <p>O valor do aluguel tem um preço justo e com tudo incluso (água, IPTU, luz, mobília, internet básica). </p>
                     <p>Não temos vaga de garagem (mas temos parceria com estacionamento próximo).</p>
-
-                    <h2>Regras</h2>
+                    
+                    <div class="regras">
+                        <img src="icones/file-text1.svg" alt="">
+                        <h2>Regras</h2>
+                    </div>
                     <p>Ambiente familiar, </p>
-                    <p>Amamos crianças e pets, mas não podemos aceitar, devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
+                    <p>Amamos crianças e pets, mas não podemos aceitar devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
                     <p>Dispenso Corretores, Captadores e Imobiliárias.</p>
                     <p>Direto com proprietário sem burocracia</p>
 
                     <h3>Excelente oportunidade.</h3>
-                    <p>Interessados chamar no zap <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>
+                    <p>Interessados chamar no Whatsapp <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>                   
                     <button class="btn_modal_kitform" onclick="AbrirModal()">Enviar email</button>
                     <button id="closeModalForm" onclick="FecharModalKitnet1()">&times</button>
                 </div>
@@ -400,20 +398,26 @@
                 </div>
                 
                 <div class="modal_txt">
-                    <h1>Kitnet 2</h1>
-                    <p>Kitnets com quarto conjugado com cozinha, banheiro e área de serviço. Todas com aproximadamente 25 metros quadrados.</p>
-                    <p>Direto com proprietário sem burocracia, locações individuais e para mulheres</p>
-                    <p>Valor do aluguel com preço justo e com tudo incluso água, iptu, luz, mobília, internet básica. </p>
+                    <div class="regras">
+                        <img src="icones/home1.svg" alt="">
+                        <h1>Kitnet 2</h1>
+                    </div>
+                    <p>Kitnets com quarto conjugado junto a cozinha, banheiro e área de serviço. Todas com aproximadamente 25m².</p>
+                    <p>Direto com proprietário e sem burocracia, locações individuais e para mulheres</p>
+                    <p>O valor do aluguel tem um preço justo e com tudo incluso (água, IPTU, luz, mobília, internet básica). </p>
                     <p>Não temos vaga de garagem (mas temos parceria com estacionamento próximo).</p>
-
-                    <h2>Regras</h2>
+                    
+                    <div class="regras">
+                        <img src="icones/file-text1.svg" alt="">
+                        <h2>Regras</h2>
+                    </div>
                     <p>Ambiente familiar, </p>
-                    <p>Amamos crianças e pets, mas não podemos aceitar, devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
+                    <p>Amamos crianças e pets, mas não podemos aceitar devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
                     <p>Dispenso Corretores, Captadores e Imobiliárias.</p>
                     <p>Direto com proprietário sem burocracia</p>
 
                     <h3>Excelente oportunidade.</h3>
-                    <p>Interessados chamar no zap <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>
+                    <p>Interessados chamar no Whatsapp <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>   
                     <button class="btn_modal_kitform" onclick="AbrirModal()">Enviar email</button>
                     
                     <button id="closeModalForm" onclick="FecharModalKitnet2()">&times</button>
@@ -437,20 +441,26 @@
                 </div>
                 
                 <div class="modal_txt">
-                    <h1>Kitnet 3</h1>
-                    <p>Kitnets com quarto conjugado com cozinha, banheiro e área de serviço. Todas com aproximadamente 25 metros quadrados.</p>
-                    <p>Direto com proprietário sem burocracia, locações individuais e para mulheres</p>
-                    <p>Valor do aluguel com preço justo e com tudo incluso água, iptu, luz, mobília, internet básica. </p>
+                    <div class="regras">
+                        <img src="icones/home1.svg" alt="">
+                        <h1>Kitnet 3</h1>
+                    </div>
+                    <p>Kitnets com quarto conjugado junto a cozinha, banheiro e área de serviço. Todas com aproximadamente 25m².</p>
+                    <p>Direto com proprietário e sem burocracia, locações individuais e para mulheres</p>
+                    <p>O valor do aluguel tem um preço justo e com tudo incluso (água, IPTU, luz, mobília, internet básica). </p>
                     <p>Não temos vaga de garagem (mas temos parceria com estacionamento próximo).</p>
-
-                    <h2>Regras</h2>
+                    
+                    <div class="regras">
+                        <img src="icones/file-text1.svg" alt="">
+                        <h2>Regras</h2>
+                    </div>
                     <p>Ambiente familiar, </p>
-                    <p>Amamos crianças e pets, mas não podemos aceitar, devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
+                    <p>Amamos crianças e pets, mas não podemos aceitar devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
                     <p>Dispenso Corretores, Captadores e Imobiliárias.</p>
                     <p>Direto com proprietário sem burocracia</p>
 
                     <h3>Excelente oportunidade.</h3>
-                    <p>Interessados chamar no zap <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>
+                    <p>Interessados chamar no Whatsapp <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>   
                     <button class="btn_modal_kitform" onclick="AbrirModal()">Enviar email</button>
                     
                     <button id="closeModalForm" onclick="FecharModalKitnet3()">&times</button>
@@ -483,20 +493,26 @@
                 </div>
                 
                 <div class="modal_txt">
-                    <h1>Kitnet 4</h1>
-                    <p>Kitnets com quarto conjugado com cozinha, banheiro e área de serviço. Todas com aproximadamente 25 metros quadrados.</p>
-                    <p>Direto com proprietário sem burocracia, locações individuais e para mulheres</p>
-                    <p>Valor do aluguel com preço justo e com tudo incluso água, iptu, luz, mobília, internet básica. </p>
+                    <div class="regras">
+                        <img src="icones/home1.svg" alt="">
+                        <h1>Kitnet 4</h1>
+                    </div>
+                    <p>Kitnets com quarto conjugado junto a cozinha, banheiro e área de serviço. Todas com aproximadamente 25m².</p>
+                    <p>Direto com proprietário e sem burocracia, locações individuais e para mulheres</p>
+                    <p>O valor do aluguel tem um preço justo e com tudo incluso (água, IPTU, luz, mobília, internet básica). </p>
                     <p>Não temos vaga de garagem (mas temos parceria com estacionamento próximo).</p>
-
-                    <h2>Regras</h2>
+                    
+                    <div class="regras">
+                        <img src="icones/file-text1.svg" alt="">
+                        <h2>Regras</h2>
+                    </div>
                     <p>Ambiente familiar, </p>
-                    <p>Amamos crianças e pets, mas não podemos aceitar, devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
+                    <p>Amamos crianças e pets, mas não podemos aceitar devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
                     <p>Dispenso Corretores, Captadores e Imobiliárias.</p>
                     <p>Direto com proprietário sem burocracia</p>
 
                     <h3>Excelente oportunidade.</h3>
-                    <p>Interessados chamar no zap <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>
+                    <p>Interessados chamar no Whatsapp <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>   
                     <button class="btn_modal_kitform" onclick="AbrirModal()">Enviar email</button>
                     
                     <button id="closeModalForm" onclick="FecharModalKitnet4()">&times</button>
@@ -531,20 +547,26 @@
                 </div>
                 
                 <div class="modal_txt">
-                    <h1>Kitnet 5</h1>
-                    <p>Kitnets com quarto conjugado com cozinha, banheiro e área de serviço. Todas com aproximadamente 25 metros quadrados.</p>
-                    <p>Direto com proprietário sem burocracia, locações individuais e para mulheres</p>
-                    <p>Valor do aluguel com preço justo e com tudo incluso água, iptu, luz, mobília, internet básica. </p>
+                    <div class="regras">
+                        <img src="icones/home1.svg" alt="">
+                        <h1>Kitnet 5</h1>
+                    </div>
+                    <p>Kitnets com quarto conjugado junto a cozinha, banheiro e área de serviço. Todas com aproximadamente 25m².</p>
+                    <p>Direto com proprietário e sem burocracia, locações individuais e para mulheres</p>
+                    <p>O valor do aluguel tem um preço justo e com tudo incluso (água, IPTU, luz, mobília, internet básica). </p>
                     <p>Não temos vaga de garagem (mas temos parceria com estacionamento próximo).</p>
-
-                    <h2>Regras</h2>
+                    
+                    <div class="regras">
+                        <img src="icones/file-text1.svg" alt="">
+                        <h2>Regras</h2>
+                    </div>
                     <p>Ambiente familiar, </p>
-                    <p>Amamos crianças e pets, mas não podemos aceitar, devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
+                    <p>Amamos crianças e pets, mas não podemos aceitar devido ao perfil das inquilinas que buscam um lugar tranquilo para descansar.</p>
                     <p>Dispenso Corretores, Captadores e Imobiliárias.</p>
                     <p>Direto com proprietário sem burocracia</p>
 
                     <h3>Excelente oportunidade.</h3>
-                    <p>Interessados chamar no zap <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>
+                    <p>Interessados chamar no Whatsapp <a href="https://wa.me/553198881133">(31)99888-1133</a> ou clique no botão para enviar um email, deixe seu nome na lista de espera.</p>   
                     <button class="btn_modal_kitform" onclick="AbrirModal()">Enviar email</button>
                     
                     <button id="closeModalForm" onclick="FecharModalKitnet5()">&times</button>

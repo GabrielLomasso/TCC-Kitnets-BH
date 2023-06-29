@@ -260,14 +260,35 @@
 .modal_txt::-webkit-scrollbar-thumb {
     background-color: #CCC;
 }
+.modal_txt::-webkit-scrollbar-thumb:hover{
+    background-color: #c2bfbf;
+}
 
-
-.modal_txt > h1, p, h2, .btn_modal_kitform{
+.modal_txt > h1, p, .btn_modal_kitform{
     margin-bottom: 10px;
 }
 
 .modal_txt > h1{
     border-bottom: 2px solid var(--roxoclaro--);
+}
+
+.modal_txt > .regras{
+    border-bottom: 2px solid var(--roxoclaro--);
+    margin-bottom: 10px;
+}
+
+.regras{
+    display: flex;
+    column-gap: 5px;
+}
+
+.regras > h2{
+    margin: 0;
+
+}
+
+.regras > img{
+    width: 25px;
 }
 
 .modal_txt > h2{
